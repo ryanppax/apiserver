@@ -1,6 +1,18 @@
 const jwt = require("jsonwebtoken");
+const fs = require("fs");
+const path = require("path");
 
-const isRS = !!process.env.JWT_PUBLIC_KEY;
+function getPublicKey() {
+  const defaultPath = path.join(__dirname, "../../../public.pem");
+  const file = process.env.JWT_PUBLIC_KEY_FILE || defaultPath;
+  try {
+    return fs.readFileSync(file);
+  } catch {
+    return null;
+  }
+}
+
+const isRS = !!(process.env.JWT_PUBLIC_KEY || getPublicKey());
 const verifyOpts = {
   algorithms: [isRS ? "RS256" : "HS256"],
   audience: process.env.JWT_AUDIENCE,
@@ -14,7 +26,7 @@ module.exports = (required = true) => (req, res, next) => {
   if (!token) return required ? res.status(401).json({ error: "missing token" }) : next();
 
   try {
-    const key = isRS ? process.env.JWT_PUBLIC_KEY : process.env.JWT_SECRET;
+    const key = isRS ? (process.env.JWT_PUBLIC_KEY || getPublicKey()) : process.env.JWT_SECRET;
     if (!key) return res.status(500).json({ error: "server misconfigured: no JWT key" });
     const payload = jwt.verify(token, key, verifyOpts);
     req.user = payload;

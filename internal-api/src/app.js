@@ -17,8 +17,8 @@ app.get("/health", (req, res) => {
   res.json({ status: "ok", service: "apiserver", time: new Date().toISOString() });
 });
 
-app.use("/api", jwtAuth(true));
-app.use("/api/items", itemsRouter);
+app.use(jwtAuth(true));
+app.use("/items", itemsRouter);
 
 app.use(notFound);
 app.use(errorHandler);
