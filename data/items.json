@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Item 1",
+    "notes": "Sample item 1",
+    "createdAt": "2025-09-01T12:00:00.000Z",
+    "updatedAt": "2025-09-01T12:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "name": "Item 2",
+    "notes": "Sample item 2",
+    "createdAt": "2025-09-01T12:00:00.000Z",
+    "updatedAt": "2025-09-01T12:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "name": "Item 3",
+    "notes": "Sample item 3",
+    "createdAt": "2025-09-01T12:00:00.000Z",
+    "updatedAt": "2025-09-01T12:00:00.000Z"
+  },
+  {
+    "id": 4,
+    "name": "Item 4",
+    "notes": "Sample item 4",
+    "createdAt": "2025-09-01T12:00:00.000Z",
+    "updatedAt": "2025-09-01T12:00:00.000Z"
+  },
+  {
+    "id": 5,
+    "name": "Item 5",
+    "notes": "Sample item 5",
+    "createdAt": "2025-09-01T12:00:00.000Z",
+    "updatedAt": "2025-09-01T12:00:00.000Z"
+  },
+  {
+    "id": 6,
+    "name": "Item 6",
+    "notes": "Sample item 6",
+    "createdAt": "2025-09-01T12:00:00.000Z",
+    "updatedAt": "2025-09-01T12:00:00.000Z"
+  },
+  {
+    "id": 7,
+    "name": "Item 7",
+    "notes": "Sample item 7",
+    "createdAt": "2025-09-01T12:00:00.000Z",
+    "updatedAt": "2025-09-01T12:00:00.000Z"
+  },
+  {
+    "id": 8,
+    "name": "Item 8",
+    "notes": "Sample item 8",
+    "createdAt": "2025-09-01T12:00:00.000Z",
+    "updatedAt": "2025-09-01T12:00:00.000Z"
+  },
+  {
+    "id": 9,
+    "name": "Item 9",
+    "notes": "Sample item 9",
+    "createdAt": "2025-09-01T12:00:00.000Z",
+    "updatedAt": "2025-09-01T12:00:00.000Z"
+  },
+  {
+    "id": 10,
+    "name": "Item 10",
+    "notes": "Sample item 10",
+    "createdAt": "2025-09-01T12:00:00.000Z",
+    "updatedAt": "2025-09-01T12:00:00.000Z"
+  }
+]
